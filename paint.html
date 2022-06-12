@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/paint.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a>PAINTER</a></li>
+        <li><a>채색하기</a></li>
+        <li><a>HOW TO</a></li>
+        <li><a>user Name</a></li>
+      </ul>
+    </nav>
+    <div class="wrap-main-page">
+      <aside>
+        <div class="toolbar-container">
+          <div class="toolbar-font">도구</div>
+          <div class="wrap-tool">
+            <button type="button" name="brush" class="tool-btn" disabled>
+              <img src="" alt="brush-img" />
+            </button>
+            <button type="button" name="eraser" class="tool-btn" disabled>
+              <img src="" alt="eraser-img" />
+            </button>
+            <button type="button" name="spoide" class="tool-btn" disabled>
+              <img src="" alt="spoide-img" />
+            </button>
+            <button type="button" name="hand" class="tool-btn" disabled>
+              <img src="" alt="hand-img" />
+            </button>
+          </div>
+          <div class="tool-container">
+            <div class="toolbar-font">편집</div>
+            <div class="wrap-undo">
+              <button type="button" name="undo" class="tool-btn" disabled>
+                Undo
+              </button>
+              <button type="button" name="redo" class="tool-btn" disabled>
+                Redo
+              </button>
+            </div>
+          </div>
+          <div class="tool-container">
+            <div class="toolbar-font">힌트 보이기</div>
+            <div class="wrap-view-hint">
+              <label class="toggle-switch">
+                <input type="checkbox" />
+                <span class="toggle-slider toggle-round"></span>
+              </label>
+            </div>
+          </div>
+          <div class="toolbar-font">스케치 강도</div>
+          <div class="wrap-sketch-strength">
+            <div>range bar</div>
+          </div>
+        </div>
+        <div class="colorbar-container">
+          <div class="toolbar-font">색상</div>
+          <div>current color</div>
+          <div>color graph</div>
+          <div>color range bar</div>
+          <div>current color value</div>
+        </div>
+        <div class="palette-container">
+          <div class="wrap-color-palette">
+            <div class="toolbar-font">팔레트</div>
+          </div>
+        </div>
+        <div class="recent-color-containter">
+          <div class="toolbar-font">최근</div>
+          <div>recent color</div>
+        </div>
+      </aside>
+      <section>
+        <div class="wrap-upload-sketch">
+          <img src="" alt="sun-drawing" />
+          <div>내가 그린 스케치를 쉽게 채색해보세요!</div>
+          <div>파일을 드래그 하거나 버튼을 클릭하여 업로드하세요</div>
+          <button>내 파일 업로드 하기 💌</button>
+        </div>
+        <div>내 스케치가 없다면 샘플스케치를 채색해보세요!</div>
+        <div class="wrap-sample-sketch">
+          <img src="" alt="img1" /><img src="" alt="img1" /><img
+            src=""
+            alt="img1"
+          /><img src="" alt="img1" /><img src="" alt="img1" /><img
+            src=""
+            alt="img1"
+          /><img src="" alt="img1" /><img src="" alt="img1" /><img
+            src=""
+            alt="img1"
+          /><img src="" alt="img1" />
+        </div>
+      </section>
+    </div>
+    <script src="/paint.js"></script>
+  </body>
+</html>

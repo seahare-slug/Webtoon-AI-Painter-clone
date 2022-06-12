@@ -1,0 +1,136 @@
+@import url("/reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+
+:root {
+  font-family: "Noto Sans KR", sans-serif;
+  --sidebar-width: 400px;
+  --sidebar-font-size: 22px;
+}
+
+.tool-btn {
+  border: 1px rgba(0, 0, 0, 0.2) solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toolbar-font {
+  display: inline-block;
+  padding: 30px 0;
+  font-size: var(--sidebar-font-size);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+nav {
+  background-color: azure;
+  > ul {
+    height: 130px;
+    display: flex;
+    align-items: center;
+    li:nth-child(1) {
+      text-align: center;
+      font-weight: bold;
+      font-size: 40px;
+      width: var(--sidebar-width);
+    }
+    li:nth-child(2),
+    li:nth-child(3) {
+      margin-right: 30px;
+    }
+    li:nth-child(4) {
+      margin: 0 30px 0 auto;
+    }
+  }
+}
+
+.wrap-main-page {
+  display: flex;
+}
+
+aside {
+  background-color: aquamarine;
+  box-sizing: border-box;
+  width: var(--sidebar-width);
+  padding: 10px 35px;
+}
+
+.wrap-tool {
+  display: flex;
+  justify-content: space-between;
+  > button {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.tool-container {
+  display: flex;
+  margin-top: 30px;
+}
+
+.wrap-undo {
+  display: flex;
+  flex: 1;
+  justify-content: end;
+  align-items: center;
+  > button {
+    margin-left: 7px;
+    height: 50px;
+    width: 80px;
+    font-size: var(--sidebar-font-size);
+  }
+}
+
+.toggle-switch {
+  top: 28px;
+  left: 170px;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+
+  input {
+    display: none;
+
+    &:checked + .toggle-slider {
+      background-color: black;
+    }
+    &:checked + .toggle-slider::before {
+      transform: translateX(26px);
+    }
+  }
+  .toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 22px;
+      width: 22px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: 0.4s;
+    }
+  }
+
+  .toggle-slider,
+  .toggle-round {
+    border-radius: 34px;
+  }
+
+  .toggle-round::before {
+    border-radius: 50%;
+  }
+}
+
+section {
+  background-color: bisque;
+  flex: 1;
+}
