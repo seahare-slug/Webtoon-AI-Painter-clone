@@ -49,20 +49,28 @@
             <div class="toolbar-font">힌트 보이기</div>
             <div class="wrap-view-hint">
               <label class="toggle-switch">
-                <input type="checkbox" />
+                <input type="checkbox" disabled />
                 <span class="toggle-slider toggle-round"></span>
               </label>
             </div>
           </div>
-          <div class="toolbar-font">스케치 강도</div>
-          <div class="wrap-sketch-strength">
-            <div>range bar</div>
+          <div class="tool-container">
+            <div class="toolbar-font">스케치 강도</div>
+            <div class="wrap-sketch-strength">
+              <input
+                type="range"
+                min="0"
+                max="30"
+                value="17"
+                class="sketch-strength-slider"
+              />
+            </div>
           </div>
         </div>
         <div class="colorbar-container">
           <div class="toolbar-font">색상</div>
           <div>current color</div>
-          <div>color graph</div>
+          <input type="color" />
           <div>color range bar</div>
           <div>current color value</div>
         </div>
