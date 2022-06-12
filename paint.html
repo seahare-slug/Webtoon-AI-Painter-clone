@@ -22,19 +22,35 @@
           <div class="toolbar-font">도구</div>
           <div class="wrap-tool">
             <button type="button" name="brush" class="tool-btn" disabled>
-              <img src="" alt="brush-img" />
+              <img
+                src="/images/paintbrush-solid.png"
+                alt="brush-img"
+                class="tool-disabled"
+              />
             </button>
             <button type="button" name="eraser" class="tool-btn" disabled>
-              <img src="" alt="eraser-img" />
+              <img
+                src="/images/eraser-solid.png"
+                alt="eraser-img"
+                class="tool-disabled"
+              />
             </button>
             <button type="button" name="spoide" class="tool-btn" disabled>
-              <img src="" alt="spoide-img" />
+              <img
+                src="/images/eye-dropper-solid.png"
+                alt="spoide-img"
+                class="tool-disabled"
+              />
             </button>
             <button type="button" name="hand" class="tool-btn" disabled>
-              <img src="" alt="hand-img" />
+              <img
+                src="/images/hand-regular.png"
+                alt="hand-img"
+                class="tool-disabled"
+              />
             </button>
           </div>
-          <div class="tool-container">
+          <div class="tool-container undo-container">
             <div class="toolbar-font">편집</div>
             <div class="wrap-undo">
               <button type="button" name="undo" class="tool-btn" disabled>
@@ -45,7 +61,7 @@
               </button>
             </div>
           </div>
-          <div class="tool-container">
+          <div class="tool-container view-hint-container">
             <div class="toolbar-font">힌트 보이기</div>
             <div class="wrap-view-hint">
               <label class="toggle-switch">
@@ -56,32 +72,36 @@
           </div>
           <div class="tool-container">
             <div class="toolbar-font">스케치 강도</div>
-            <div class="wrap-sketch-strength">
+            <div class="wrap-sketch-strength tool-disabled">
               <input
                 type="range"
                 min="0"
                 max="30"
-                value="17"
+                value="11"
                 class="sketch-strength-slider"
               />
             </div>
           </div>
         </div>
-        <div class="colorbar-container">
-          <div class="toolbar-font">색상</div>
-          <div>current color</div>
-          <input type="color" />
-          <div>color range bar</div>
-          <div>current color value</div>
-        </div>
-        <div class="palette-container">
-          <div class="wrap-color-palette">
-            <div class="toolbar-font">팔레트</div>
+        <div class="toolbar-container">
+          <div class="color-picker-container">
+            <div class="toolbar-font">색상</div>
+            <div>current color</div>
+            <input type="color" />
+            <div>color range bar</div>
+            <div>current color value</div>
           </div>
         </div>
-        <div class="recent-color-containter">
+        <div class="toolbar-container palette-container">
+          <div class="toolbar-font">팔레트</div>
+          <div class="toolbar-font">기본 &gt;</div>
+          <div class="wrap-color-palette">color palette</div>
+        </div>
+        <div class="toolbar-container recent-color-container">
           <div class="toolbar-font">최근</div>
-          <div>recent color</div>
+          <div class="wrap-recent-color">
+            <div>recent color</div>
+          </div>
         </div>
       </aside>
       <section>
