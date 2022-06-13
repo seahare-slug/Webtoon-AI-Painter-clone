@@ -3,14 +3,16 @@
 :root {
   box-sizing: border-box;
   font-family: "Noto Sans KR", sans-serif;
+  --max-width: 1920px;
   --sidebar-width: 294px;
   --sidebar-font-size: 14px;
-  --basic-border: 1px rgba(0, 0, 0, 0.1) solid;
+  --basic-border: rgba(0, 0, 0, 0.1) solid;
 }
 
 nav {
   background-color: white;
   border: var(--basic-border);
+  border-width: 0 0 1px 0;
 }
 nav > ul {
   height: 100px;
@@ -26,7 +28,7 @@ nav > ul li:nth-child(1) {
 nav > ul li:nth-child(2),
 nav > ul li:nth-child(3) {
   font-size: 18px;
-  margin-right: 30px;
+  margin-right: 40px;
 }
 nav > ul li:nth-child(4) {
   font-size: 14px;
@@ -41,15 +43,18 @@ aside {
   background-color: white;
   border: var(--basic-border);
   width: var(--sidebar-width);
+  border-width: 0 1px 0 0;
 }
 
 .toolbar-container {
   padding: 28px 28px 30px 28px;
   border: var(--basic-border);
+  border-width: 0 0 1px 0;
 }
 
 .tool-btn {
   border: var(--basic-border);
+  border-width: 1px;
   border-radius: 7px;
 }
 
@@ -171,11 +176,15 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 section {
-  margin: 0px auto;
-  padding: 92px 92px 100px;
-  max-width: 1920px;
-  background-color: rgb(240, 240, 240);
   flex: 1;
+  background-color: rgb(240, 240, 240);
+}
+
+.wrap-section {
+  box-sizing: border-box;
+  padding: 92px 92px 100px;
+  margin: 0 auto;
+  max-width: var(--max-width);
 }
 
 .wrap-upload-sketch {
@@ -207,15 +216,24 @@ section {
 }
 
 .upload-sketch-btn {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  background-color: rgb(0, 220, 100);
   width: 260px;
   height: 60px;
-  font-size: 100%;
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 10px;
+}
+.upload-sketch-btn > div {
+  font-size: 16px;
   font-weight: bold;
   color: white;
-  background-color: rgb(0, 220, 100);
-  cursor: pointer;
+}
+.upload-sketch-btn > img {
+  margin-left: 10px;
+  width: 30px;
 }
 
 .section-main-paragraph {
