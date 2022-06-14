@@ -253,37 +253,29 @@ section {
 }
 
 .wrap-sample-sketch {
-  // position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.wrap-sample-sketch-colored {
+.foorm {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  > img {
-    margin-top: 1%;
-    width: calc(24%);
-    border: 1px rgba(0, 0, 0, 0.2) solid;
-    background-color: white;
-    background-size: cover;
-    cursor: pointer;
-  }
+  margin-top: 2%;
+  width: calc(22%);
+  border: 1px rgba(0, 0, 0, 0.2) solid;
+  background-color: white;
+  background-size: cover;
+  cursor: pointer;
 }
 
-.wrap-sample-sketch-non-colored {
+.sample-sketch-colored {
+  width: 100%;
+  position: relative;
+}
+
+.sample-sketch-non-colored {
+  top: 0;
+  left: 0;
+  width: 100%;
   position: absolute;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  > img {
-    margin-top: 1%;
-    width: calc(24%);
-    top: 0;
-    left: 0;
-    border: 1px rgba(0, 0, 0, 0.2) solid;
-    background-color: white;
-    background-size: cover;
-    cursor: pointer;
-  }
 }

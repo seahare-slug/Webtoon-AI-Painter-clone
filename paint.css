@@ -242,36 +242,32 @@ section {
   font-weight: bold;
 }
 
-.wrap-sample-sketch-colored {
-  position: relative;
+.wrap-sample-sketch {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.wrap-sample-sketch-colored > img {
-  margin-top: 1%;
-  width: 24%;
+
+.foorm {
+  position: relative;
+  margin-top: 2%;
+  width: 22%;
   border: 1px rgba(0, 0, 0, 0.2) solid;
   background-color: white;
   background-size: cover;
   cursor: pointer;
 }
 
-.wrap-sample-sketch-non-colored {
-  position: absolute;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+.sample-sketch-colored {
+  width: 100%;
+  position: relative;
 }
-.wrap-sample-sketch-non-colored > img {
-  margin-top: 1%;
-  width: 24%;
+
+.sample-sketch-non-colored {
   top: 0;
   left: 0;
-  border: 1px rgba(0, 0, 0, 0.2) solid;
-  background-color: white;
-  background-size: cover;
-  cursor: pointer;
+  width: 100%;
+  position: absolute;
 }
 
 /*# sourceMappingURL=paint.css.map */
