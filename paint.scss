@@ -339,6 +339,7 @@ section {
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 10px;
   > div {
+    margin-left: 20px;
     font-size: 16px;
     font-weight: bold;
     color: white;
@@ -346,6 +347,11 @@ section {
   > img {
     margin-left: 10px;
     width: 30px;
+  }
+  &:hover {
+    > * {
+      opacity: 0.7;
+    }
   }
 }
 
