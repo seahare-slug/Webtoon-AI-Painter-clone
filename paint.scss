@@ -21,8 +21,8 @@
 
 .nav-clicked-font {
   font-size: 18px;
-  color: rgb(0, 224, 86);
   font-weight: bold;
+  color: rgb(0, 224, 86);
 }
 
 a {
@@ -53,18 +53,18 @@ a {
     .modal-side-main-menu {
       margin-top: 40px;
       width: 100%;
-      font-weight: bold;
       font-size: 24px;
+      font-weight: bold;
     }
     .modal-side-menu-footer {
-      margin-top: 40vh;
-      font-weight: 500;
-      font-size: 16px;
       display: flex;
+      margin-top: 40vh;
+      font-size: 16px;
+      font-weight: 500;
 
       > span {
-        margin: 0 10px;
         opacity: 0.3;
+        margin: 0 10px;
       }
       .log-out-modal {
         font-weight: bold;
@@ -75,16 +75,16 @@ a {
     }
   }
   > img {
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 40px;
     margin-left: var(--modal-side-menu-width);
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
 nav {
-  background-color: white;
   border: var(--basic-border);
   border-width: 0 0 1px 0;
+  background-color: white;
 
   .open-menu-icon {
     opacity: 0;
@@ -93,18 +93,18 @@ nav {
     width: 18px;
   }
   > ul {
-    height: 100px;
-    align-items: center;
     display: flex;
+    align-items: center;
+    height: 100px;
     .nav-home {
       text-align: center;
-      font-weight: bold;
-      font-size: 40px;
       width: var(--sidebar-width);
+      font-size: 40px;
+      font-weight: bold;
     }
     .nav-main {
-      font-size: 18px;
       margin-right: 40px;
+      font-size: 18px;
     }
     .nav-user {
       position: relative;
@@ -121,11 +121,11 @@ nav {
       }
       > .nav-user-option {
         display: none;
-        text-align: center;
-        width: 120px;
-        padding-top: 20px;
-        left: -40%;
         position: absolute;
+        left: -40%;
+        text-align: center;
+        padding-top: 20px;
+        width: 120px;
         box-sizing: border-box;
         > .nav-user-option-background {
           background-color: white;
@@ -155,10 +155,10 @@ nav {
 }
 
 .side-menu {
-  background-color: white;
-  border: var(--basic-border);
   width: var(--sidebar-width);
+  border: var(--basic-border);
   border-width: 0 1px 0 0;
+  background-color: white;
 }
 
 .toolbar-container {
@@ -184,17 +184,17 @@ nav {
 }
 
 .tool-container {
-  align-items: center;
   display: flex;
+  align-items: center;
 }
 
 .wrap-tool {
   display: flex;
-  margin-top: 12px;
   justify-content: space-between;
+  margin-top: 12px;
   > button {
-    height: 53px;
     width: 53px;
+    height: 53px;
     background-color: white;
   }
 
@@ -205,8 +205,7 @@ nav {
 }
 
 .undo-container {
-  margin-top: 31px;
-  margin-bottom: 22px;
+  margin: 31px 0 22px 0;
 }
 
 .wrap-undo {
@@ -215,11 +214,11 @@ nav {
   justify-content: end;
   align-items: center;
   > button {
-    background-color: white;
     margin-left: 7px;
-    height: 33px;
     width: 53px;
+    height: 33px;
     font-size: var(--sidebar-font-size);
+    background-color: white;
   }
 }
 
@@ -228,8 +227,8 @@ nav {
 }
 
 .toggle-switch {
-  left: 120px;
   position: relative;
+  left: 120px;
   display: inline-block;
   width: 40px;
   height: 22px;
@@ -246,21 +245,21 @@ nav {
   }
   .toggle-slider {
     position: absolute;
-    cursor: pointer;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: #ccc;
+    cursor: pointer;
     transition: 0.4s;
 
     &::before {
       position: absolute;
       content: "";
-      height: 14px;
-      width: 14px;
       left: 4px;
       bottom: 4px;
+      width: 14px;
+      height: 14px;
       background-color: white;
       transition: 0.4s;
     }
@@ -291,8 +290,8 @@ input[type="range"]::-webkit-slider-thumb {
 .sketch-strength-slider {
   appearance: none;
   outline: none;
-  height: 3px;
   width: 100px;
+  height: 3px;
   background: #ccc;
 }
 
@@ -302,10 +301,10 @@ section {
 }
 
 .wrap-section {
-  box-sizing: border-box;
-  padding: 92px 92px 100px;
-  margin: 0 auto;
   max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 92px 92px 100px;
+  box-sizing: border-box;
 }
 
 .wrap-upload-sketch {
@@ -314,8 +313,8 @@ section {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-bottom: 36px;
   margin-bottom: 69px;
+  padding-bottom: 36px;
   border: 2px dashed rgb(0, 220, 100);
   border-radius: 4px;
 }
@@ -340,8 +339,8 @@ section {
 .upload-sketch-paragraph-1 {
   position: relative;
   margin-bottom: 12px;
-  font-weight: bold;
   font-size: 25px;
+  font-weight: bold;
 }
 
 .upload-sketch-paragraph-2 {
@@ -357,8 +356,8 @@ section {
   text-align: center;
   width: 100%;
   margin-bottom: 12px;
-  font-weight: bold;
   font-size: 19px;
+  font-weight: bold;
 }
 
 .upload-sketch-paragraph-2-resize {
@@ -372,15 +371,15 @@ section {
 }
 
 .upload-sketch-btn {
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
-  cursor: pointer;
-  background-color: rgb(0, 220, 100);
   width: 260px;
   height: 62px;
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 10px;
+  background-color: rgb(0, 220, 100);
+  cursor: pointer;
   &:hover {
     > * {
       opacity: var(--font-hover-opacity);
@@ -424,9 +423,9 @@ section {
 .sample-sketch-non-colored {
   position: relative;
   width: 100%;
-  z-index: 2;
   border: 2px rgba(0, 0, 0, 0.1) solid;
   background-color: white;
+  z-index: 2;
   transition: 0.4s ease;
   &:hover {
     opacity: 0;
@@ -439,9 +438,9 @@ section {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
   border: 2px rgb(0, 220, 100) solid;
   background-color: white;
+  z-index: 1;
 }
 // Media query
 @media screen and (max-width: 839px) {
@@ -450,14 +449,14 @@ section {
       opacity: 1;
     }
     > ul {
-      height: 60px;
-      align-items: center;
       display: flex;
+      align-items: center;
+      height: 60px;
       li:nth-child(2) {
         display: block;
-        font-weight: bold;
-        font-size: 100%;
         width: 100%;
+        font-size: 100%;
+        font-weight: bold;
       }
       li:nth-child(3),
       li:nth-child(4),
@@ -470,9 +469,9 @@ section {
     display: none;
   }
   .wrap-section {
-    box-sizing: border-box;
-    padding: 25px 25px 0;
     margin: 0 auto;
+    padding: 25px 25px 0;
+    box-sizing: border-box;
     max-width: var(--max-width);
   }
   .upload-sketch-img {
