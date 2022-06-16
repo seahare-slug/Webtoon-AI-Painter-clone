@@ -8,6 +8,7 @@
   --sidebar-width: 294px;
   --sidebar-font-size: 14px;
   --basic-border: rgba(0, 0, 0, 0.1) solid;
+  --font-hover-opacity: 0.7;
 }
 
 .hide-element {
@@ -16,6 +17,12 @@
 
 .disable-scroll {
   overflow: hidden;
+}
+
+.nav-clicked-font {
+  font-size: 18px;
+  color: rgb(0, 224, 86);
+  font-weight: bold;
 }
 
 a {
@@ -59,10 +66,10 @@ a {
         margin: 0 10px;
         opacity: 0.3;
       }
-      :nth-child(1) {
+      .log-out-modal {
         font-weight: bold;
       }
-      :nth-child(3) {
+      .withdrawal-modal {
         opacity: 0.5;
       }
     }
@@ -89,20 +96,56 @@ nav {
     height: 100px;
     align-items: center;
     display: flex;
-    li:nth-child(2) {
+    .nav-home {
       text-align: center;
       font-weight: bold;
       font-size: 40px;
       width: var(--sidebar-width);
     }
-    li:nth-child(3),
-    li:nth-child(4) {
+    .nav-main {
       font-size: 18px;
       margin-right: 40px;
     }
-    li:nth-child(5) {
-      font-size: 14px;
+    .nav-user {
+      position: relative;
       margin: 0 30px 0 auto;
+      font-size: 14px;
+      cursor: pointer;
+      &:hover {
+        > .nav-user-name {
+          opacity: var(--font-hover-opacity);
+        }
+        > .nav-user-option {
+          display: block;
+        }
+      }
+      > .nav-user-option {
+        display: none;
+        text-align: center;
+        width: 120px;
+        padding-top: 20px;
+        left: -40%;
+        position: absolute;
+        box-sizing: border-box;
+        > .nav-user-option-background {
+          background-color: white;
+          > a {
+            display: block;
+            padding: 15px;
+            box-shadow: 0 1px 5px rgba(82, 82, 82, 0.3);
+            cursor: pointer;
+            &:hover {
+              opacity: var(--font-hover-opacity);
+            }
+          }
+        }
+        .nav-log-out {
+          border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+        }
+        .nav-withdrawal {
+          color: rgba(0, 0, 0, 0.5);
+        }
+      }
     }
   }
 }
@@ -338,6 +381,11 @@ section {
   height: 62px;
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 10px;
+  &:hover {
+    > * {
+      opacity: var(--font-hover-opacity);
+    }
+  }
   > div {
     margin-left: 20px;
     font-size: 16px;
@@ -348,10 +396,8 @@ section {
     margin-left: 10px;
     width: 30px;
   }
-  &:hover {
-    > * {
-      opacity: 0.7;
-    }
+  > .uplaod-sketch {
+    display: none;
   }
 }
 

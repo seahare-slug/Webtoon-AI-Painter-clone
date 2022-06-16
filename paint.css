@@ -17,6 +17,12 @@
   overflow: hidden;
 }
 
+.nav-clicked-font {
+  font-size: 18px;
+  color: rgb(0, 224, 86);
+  font-weight: bold;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -101,6 +107,41 @@ nav > ul li:nth-child(4) {
 nav > ul li:nth-child(5) {
   font-size: 14px;
   margin: 0 30px 0 auto;
+  font-size: 14px;
+  cursor: pointer;
+}
+nav > ul .nav-user:hover > .nav-user-name {
+  opacity: var(--font-hover-opacity);
+}
+nav > ul .nav-user:hover > .nav-user-option {
+  display: block;
+}
+nav > ul .nav-user > .nav-user-option {
+  display: none;
+  text-align: center;
+  width: 120px;
+  padding-top: 20px;
+  left: -40%;
+  position: absolute;
+  box-sizing: border-box;
+}
+nav > ul .nav-user > .nav-user-option > .nav-user-option-background {
+  background-color: white;
+}
+nav > ul .nav-user > .nav-user-option > .nav-user-option-background > a {
+  display: block;
+  padding: 15px;
+  box-shadow: 0 1px 5px rgba(82, 82, 82, 0.3);
+  cursor: pointer;
+}
+nav > ul .nav-user > .nav-user-option > .nav-user-option-background > a:hover {
+  opacity: var(--font-hover-opacity);
+}
+nav > ul .nav-user > .nav-user-option .nav-log-out {
+  border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+}
+nav > ul .nav-user > .nav-user-option .nav-withdrawal {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .wrap-main-page {
@@ -329,6 +370,9 @@ section {
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 10px;
 }
+.upload-sketch-btn:hover > * {
+  opacity: var(--font-hover-opacity);
+}
 .upload-sketch-btn > div {
   margin-left: 20px;
   font-size: 16px;
@@ -339,8 +383,8 @@ section {
   margin-left: 10px;
   width: 30px;
 }
-.upload-sketch-btn:hover > * {
-  opacity: 0.7;
+.upload-sketch-btn > .uplaod-sketch {
+  display: none;
 }
 
 .section-main-paragraph {

@@ -15,9 +15,9 @@
         <div class="modal-side-main-menu">채색하기</div>
         <div class="modal-side-main-menu">HOW TO</div>
         <footer class="modal-side-menu-footer">
-          <div>로그아웃</div>
+          <div class="log-out-modal">로그아웃</div>
           <span>|</span>
-          <div>회원탈퇴</div>
+          <div class="withdrawal-modal">회원탈퇴</div>
         </footer>
       </aside>
       <img
@@ -33,10 +33,22 @@
           alt="open-menu-icon"
           src="/images/open-menu-icon.png"
         />
-        <li><a href="">PAINTER</a></li>
-        <li><a href="">채색하기</a></li>
-        <li><a href="">HOW TO</a></li>
-        <li><a href="">userName</a></li>
+        <li class="nav-home"><a href="">PAINTER</a></li>
+        <li class="nav-main nav-clicked-font">
+          <a href="">채색하기</a>
+        </li>
+        <li class="nav-main"><a href="">HOW TO</a></li>
+        <li class="nav-user">
+          <div class="nav-user-name">userName</div>
+          <div class="nav-user-option">
+            <div class="nav-user-option-background">
+              <a class="nav-log-out">로그아웃</a>
+            </div>
+            <div class="nav-user-option-background">
+              <a class="nav-withdrawal">회원탈퇴</a>
+            </div>
+          </div>
+        </li>
       </ul>
     </nav>
     <div class="wrap-main-page">
@@ -157,8 +169,15 @@
               </div>
             </div>
             <button class="upload-sketch-btn">
-              <div>내 파일 업로드 하기</div>
+              <div><label for="upload-sketch">내 파일 업로드 하기</label></div>
               <img src="/images/upload-icon.png" alt="upload-icon" />
+              <input
+                type="file"
+                id="upload-sketch"
+                class="uplaod-sketch"
+                accept="image/*"
+                required
+              />
             </button>
           </div>
           <div class="section-main-paragraph">
