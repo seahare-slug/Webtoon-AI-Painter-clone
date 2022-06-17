@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/sketch.css" />
+  </head>
+  <body>
+    <div class="wrap-modal-side-menu hide-element">
+      <aside class="modal-side-menu">
+        <div class="modal-side-menu-username">userName</div>
+        <div class="modal-side-main-menu">홈</div>
+        <div class="modal-side-main-menu">채색하기</div>
+        <div class="modal-side-main-menu">HOW TO</div>
+        <footer class="modal-side-menu-footer">
+          <div class="log-out-modal">로그아웃</div>
+          <span>|</span>
+          <div class="withdrawal-modal">회원탈퇴</div>
+        </footer>
+      </aside>
+      <img
+        class="modal-handle-icon"
+        alt="times-icon"
+        src="/images/times-icon.png"
+      />
+    </div>
+    <nav>
+      <ul>
+        <img
+          class="modal-handle-icon open-menu-icon"
+          alt="open-menu-icon"
+          src="/images/open-menu-icon.png"
+        />
+        <li class="nav-home"><a href="">PAINTER</a></li>
+        <li class="nav-main nav-clicked-font">
+          <a href="">채색하기</a>
+        </li>
+        <li class="nav-main"><a href="">HOW TO</a></li>
+        <li class="nav-user">
+          <div class="nav-user-name">userName</div>
+          <div class="nav-user-option">
+            <div class="nav-user-option-background">
+              <a class="nav-log-out">로그아웃</a>
+            </div>
+            <div class="nav-user-option-background">
+              <a class="nav-withdrawal">회원탈퇴</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="wrap-main-page">
+      <aside class="side-menu">
+        <div class="toolbar-container">
+          <div class="toolbar-font">도구</div>
+          <div class="wrap-tool">
+            <button type="button" name="brush" class="tool-btn" disabled>
+              <img
+                src="/images/paintbrush-solid.png"
+                alt="brush-img"
+                class="tool-disabled"
+              />
+            </button>
+            <button type="button" name="eraser" class="tool-btn" disabled>
+              <img
+                src="/images/eraser-solid.png"
+                alt="eraser-img"
+                class="tool-disabled"
+              />
+            </button>
+            <button type="button" name="spoide" class="tool-btn" disabled>
+              <img
+                src="/images/eye-dropper-solid.png"
+                alt="spoide-img"
+                class="tool-disabled"
+              />
+            </button>
+            <button type="button" name="hand" class="tool-btn" disabled>
+              <img
+                src="/images/hand-regular.png"
+                alt="hand-img"
+                class="tool-disabled"
+              />
+            </button>
+          </div>
+          <div class="tool-container undo-container">
+            <div class="toolbar-font">편집</div>
+            <div class="wrap-undo">
+              <button type="button" name="undo" class="tool-btn" disabled>
+                Undo
+              </button>
+              <button type="button" name="redo" class="tool-btn" disabled>
+                Redo
+              </button>
+            </div>
+          </div>
+          <div class="tool-container view-hint-container">
+            <div class="toolbar-font">힌트 보이기</div>
+            <div class="wrap-view-hint">
+              <label class="toggle-switch">
+                <input type="checkbox" disabled />
+                <span class="toggle-slider toggle-round"></span>
+              </label>
+            </div>
+          </div>
+          <div class="tool-container">
+            <div class="toolbar-font">스케치 강도</div>
+            <div class="wrap-sketch-strength tool-disabled">
+              <input
+                type="range"
+                min="0"
+                max="30"
+                value="11"
+                class="sketch-strength-slider"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="toolbar-container">
+          <div class="color-picker-container">
+            <div class="toolbar-font">색상</div>
+            <div>current color</div>
+            <input type="color" />
+            <div>color range bar</div>
+            <div>current color value</div>
+          </div>
+        </div>
+        <div class="toolbar-container palette-container">
+          <div class="toolbar-font">팔레트</div>
+          <div class="toolbar-font">기본 &gt;</div>
+          <div class="wrap-color-palette">color palette</div>
+        </div>
+        <div class="toolbar-container recent-color-container">
+          <div class="toolbar-font">최근</div>
+          <div class="wrap-recent-color">
+            <div>recent color</div>
+          </div>
+        </div>
+      </aside>
+      <section class="sketch-section">
+        <div class="wrap-section">
+          <div class="wrap-upload-sketch">
+            <img
+              class="upload-sketch-img"
+              src="/images/upload-sketch-img.png"
+              alt="upload-sketch-img"
+            />
+            <img
+              class="upload-sketch-img-resize"
+              src="/images/upload-sketch-img_resize.png"
+              alt="upload-sketch-img-resize"
+            />
+            <div class="wrap-upload-sketch-paragraph">
+              <div class="upload-sketch-paragraph-1">
+                내가 그린 스케치를 쉽게 채색해보세요!
+              </div>
+              <div class="upload-sketch-paragraph-1-resize">
+                내 스케치를 쉽게 채색해보세요!
+              </div>
+            </div>
+            <div class="wrap-upload-sketch-paragraph">
+              <div class="upload-sketch-paragraph-2">
+                파일을 드래그 하거나 버튼을 클릭하여 업로드하세요
+              </div>
+              <div class="upload-sketch-paragraph-2-resize">
+                버튼을 클릭하여 업로드하세요
+              </div>
+            </div>
+            <button class="upload-sketch-btn">
+              <div><label for="upload-sketch">내 파일 업로드 하기</label></div>
+              <img src="/images/upload-icon.png" alt="upload-icon" />
+              <input
+                type="file"
+                id="upload-sketch"
+                class="uplaod-sketch"
+                accept="image/*"
+                required
+              />
+            </button>
+          </div>
+          <div class="section-main-paragraph">
+            내 스케치가 없다면 샘플스케치를 채색해보세요!
+          </div>
+          <div class="wrap-sample-sketch">
+            <div class="sample-sketch">
+              <img
+                class="sample-sketch-non-colored"
+                src="/images/test1-non-colored.png"
+                alt="img1"
+              />
+              <img
+                class="sample-sketch-colored"
+                src="/images/test1.png"
+                alt="img1"
+              />
+            </div>
+            <div class="sample-sketch">
+              <img
+                class="sample-sketch-non-colored"
+                src="/images/test1-non-colored.png"
+                alt="img2"
+              />
+              <img
+                class="sample-sketch-colored"
+                src="/images/test1.png"
+                alt="img2"
+              />
+            </div>
+            <div class="sample-sketch">
+              <img
+                class="sample-sketch-non-colored"
+                src="/images/test1-non-colored.png"
+                alt="img3"
+              />
+              <img
+                class="sample-sketch-colored"
+                src="/images/test1.png"
+                alt="img3"
+              />
+            </div>
+            <div class="sample-sketch">
+              <img
+                class="sample-sketch-non-colored"
+                src="/images/test1-non-colored.png"
+                alt="img4"
+              />
+              <img
+                class="sample-sketch-colored"
+                src="/images/test1.png"
+                alt="img4"
+              />
+            </div>
+            <div class="sample-sketch">
+              <img
+                class="sample-sketch-non-colored"
+                src="/images/test1-non-colored.png"
+                alt="img5"
+              />
+              <img
+                class="sample-sketch-colored"
+                src="/images/test1.png"
+                alt="img5"
+              />
+            </div>
+            <div class="sample-sketch">
+              <img
+                class="sample-sketch-non-colored"
+                src="/images/test1-non-colored.png"
+                alt="img6"
+              />
+              <img
+                class="sample-sketch-colored"
+                src="/images/test1.png"
+                alt="img6"
+              />
+            </div>
+            <div class="sample-sketch">
+              <img
+                class="sample-sketch-non-colored"
+                src="/images/test1-non-colored.png"
+                alt="img7"
+              />
+              <img
+                class="sample-sketch-colored"
+                src="/images/test1.png"
+                alt="img7"
+              />
+            </div>
+            <div class="sample-sketch">
+              <img
+                class="sample-sketch-non-colored"
+                src="/images/test1-non-colored.png"
+                alt="img8"
+              />
+              <img
+                class="sample-sketch-colored"
+                src="/images/test1.png"
+                alt="img8"
+              />
+            </div>
+            <div class="sample-sketch">
+              <img
+                class="sample-sketch-non-colored"
+                src="/images/test1-non-colored.png"
+                alt="img9"
+              />
+              <img
+                class="sample-sketch-colored"
+                src="/images/test1.png"
+                alt="img9"
+              />
+            </div>
+            <div class="sample-sketch">
+              <img
+                class="sample-sketch-non-colored"
+                src="/images/test1-non-colored.png"
+                alt="img10"
+              />
+              <img
+                class="sample-sketch-colored"
+                src="/images/test1.png"
+                alt="img10"
+              />
+            </div>
+            <div class="sample-sketch">
+              <img
+                class="sample-sketch-non-colored"
+                src="/images/test1-non-colored.png"
+                alt="img11"
+              />
+              <img
+                class="sample-sketch-colored"
+                src="/images/test1.png"
+                alt="img11"
+              />
+            </div>
+            <div class="sample-sketch">
+              <img
+                class="sample-sketch-non-colored"
+                src="/images/test1-non-colored.png"
+                alt="img12"
+              />
+              <img
+                class="sample-sketch-colored"
+                src="/images/test1.png"
+                alt="img12"
+              />
+            </div>
+            <div class="sample-sketch">
+              <img
+                class="sample-sketch-non-colored"
+                src="/images/test1-non-colored.png"
+                alt="img13"
+              />
+              <img
+                class="sample-sketch-colored"
+                src="/images/test1.png"
+                alt="img13"
+              />
+            </div>
+            <div class="sample-sketch">
+              <img
+                class="sample-sketch-non-colored"
+                src="/images/test1-non-colored.png"
+                alt="img14"
+              />
+              <img
+                class="sample-sketch-colored"
+                src="/images/test1.png"
+                alt="img14"
+              />
+            </div>
+            <div class="sample-sketch">
+              <img
+                class="sample-sketch-non-colored"
+                src="/images/test1-non-colored.png"
+                alt="img15"
+              />
+              <img
+                class="sample-sketch-colored"
+                src="/images/test1.png"
+                alt="img15"
+              />
+            </div>
+            <div class="sample-sketch">
+              <img
+                class="sample-sketch-non-colored"
+                src="/images/test1-non-colored.png"
+                alt="img16"
+              />
+              <img
+                class="sample-sketch-colored"
+                src="/images/test1.png"
+                alt="img16"
+              />
+            </div>
+            <div class="sample-sketch">
+              <img
+                class="sample-sketch-non-colored"
+                src="/images/test1-non-colored.png"
+                alt="img17"
+              />
+              <img
+                class="sample-sketch-colored"
+                src="/images/test1.png"
+                alt="img17"
+              />
+            </div>
+            <div class="sample-sketch">
+              <img
+                class="sample-sketch-non-colored"
+                src="/images/test1-non-colored.png"
+                alt="img18"
+              />
+              <img
+                class="sample-sketch-colored"
+                src="/images/test1.png"
+                alt="img18"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="/js/sketch.js"></script>
+  </body>
+</html>

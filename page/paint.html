@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/css/paint.css" />
+    <link rel="stylesheet" href="/css/sketch.css" />
   </head>
   <body>
     <div class="wrap-modal-side-menu hide-element">
@@ -139,268 +139,29 @@
           </div>
         </div>
       </aside>
-      <section>
-        <div class="wrap-section">
-          <div class="wrap-upload-sketch">
-            <img
-              class="upload-sketch-img"
-              src="/images/upload-sketch-img.png"
-              alt="upload-sketch-img"
-            />
-            <img
-              class="upload-sketch-img-resize"
-              src="/images/upload-sketch-img_resize.png"
-              alt="upload-sketch-img-resize"
-            />
-            <div class="wrap-upload-sketch-paragraph">
-              <div class="upload-sketch-paragraph-1">
-                내가 그린 스케치를 쉽게 채색해보세요!
-              </div>
-              <div class="upload-sketch-paragraph-1-resize">
-                내 스케치를 쉽게 채색해보세요!
-              </div>
-            </div>
-            <div class="wrap-upload-sketch-paragraph">
-              <div class="upload-sketch-paragraph-2">
-                파일을 드래그 하거나 버튼을 클릭하여 업로드하세요
-              </div>
-              <div class="upload-sketch-paragraph-2-resize">
-                버튼을 클릭하여 업로드하세요
-              </div>
-            </div>
-            <button class="upload-sketch-btn">
-              <div><label for="upload-sketch">내 파일 업로드 하기</label></div>
-              <img src="/images/upload-icon.png" alt="upload-icon" />
-              <input
-                type="file"
-                id="upload-sketch"
-                class="uplaod-sketch"
-                accept="image/*"
-                required
-              />
-            </button>
+      <section class="sketch-section">
+        <div class="wrap-sketch">
+          <div class="wrap-sketch-menu">
+            <div>나가기</div>
+            <div>채색 모델</div>
+            <div>사용법 보기</div>
+            <div>의견 보내기</div>
           </div>
-          <div class="section-main-paragraph">
-            내 스케치가 없다면 샘플스케치를 채색해보세요!
+          <div id="clickedSketch">
+            <img src="" alt="sketch-img" />
           </div>
-          <div class="wrap-sample-sketch">
-            <div class="sample-sketch">
-              <img
-                class="sample-sketch-non-colored"
-                src="/images/test1-non-colored.png"
-                alt="img1"
-              />
-              <img
-                class="sample-sketch-colored"
-                src="/images/test1.png"
-                alt="img1"
-              />
-            </div>
-            <div class="sample-sketch">
-              <img
-                class="sample-sketch-non-colored"
-                src="/images/test1-non-colored.png"
-                alt="img2"
-              />
-              <img
-                class="sample-sketch-colored"
-                src="/images/test1.png"
-                alt="img2"
-              />
-            </div>
-            <div class="sample-sketch">
-              <img
-                class="sample-sketch-non-colored"
-                src="/images/test1-non-colored.png"
-                alt="img3"
-              />
-              <img
-                class="sample-sketch-colored"
-                src="/images/test1.png"
-                alt="img3"
-              />
-            </div>
-            <div class="sample-sketch">
-              <img
-                class="sample-sketch-non-colored"
-                src="/images/test1-non-colored.png"
-                alt="img4"
-              />
-              <img
-                class="sample-sketch-colored"
-                src="/images/test1.png"
-                alt="img4"
-              />
-            </div>
-            <div class="sample-sketch">
-              <img
-                class="sample-sketch-non-colored"
-                src="/images/test1-non-colored.png"
-                alt="img5"
-              />
-              <img
-                class="sample-sketch-colored"
-                src="/images/test1.png"
-                alt="img5"
-              />
-            </div>
-            <div class="sample-sketch">
-              <img
-                class="sample-sketch-non-colored"
-                src="/images/test1-non-colored.png"
-                alt="img6"
-              />
-              <img
-                class="sample-sketch-colored"
-                src="/images/test1.png"
-                alt="img6"
-              />
-            </div>
-            <div class="sample-sketch">
-              <img
-                class="sample-sketch-non-colored"
-                src="/images/test1-non-colored.png"
-                alt="img7"
-              />
-              <img
-                class="sample-sketch-colored"
-                src="/images/test1.png"
-                alt="img7"
-              />
-            </div>
-            <div class="sample-sketch">
-              <img
-                class="sample-sketch-non-colored"
-                src="/images/test1-non-colored.png"
-                alt="img8"
-              />
-              <img
-                class="sample-sketch-colored"
-                src="/images/test1.png"
-                alt="img8"
-              />
-            </div>
-            <div class="sample-sketch">
-              <img
-                class="sample-sketch-non-colored"
-                src="/images/test1-non-colored.png"
-                alt="img9"
-              />
-              <img
-                class="sample-sketch-colored"
-                src="/images/test1.png"
-                alt="img9"
-              />
-            </div>
-            <div class="sample-sketch">
-              <img
-                class="sample-sketch-non-colored"
-                src="/images/test1-non-colored.png"
-                alt="img10"
-              />
-              <img
-                class="sample-sketch-colored"
-                src="/images/test1.png"
-                alt="img10"
-              />
-            </div>
-            <div class="sample-sketch">
-              <img
-                class="sample-sketch-non-colored"
-                src="/images/test1-non-colored.png"
-                alt="img11"
-              />
-              <img
-                class="sample-sketch-colored"
-                src="/images/test1.png"
-                alt="img11"
-              />
-            </div>
-            <div class="sample-sketch">
-              <img
-                class="sample-sketch-non-colored"
-                src="/images/test1-non-colored.png"
-                alt="img12"
-              />
-              <img
-                class="sample-sketch-colored"
-                src="/images/test1.png"
-                alt="img12"
-              />
-            </div>
-            <div class="sample-sketch">
-              <img
-                class="sample-sketch-non-colored"
-                src="/images/test1-non-colored.png"
-                alt="img13"
-              />
-              <img
-                class="sample-sketch-colored"
-                src="/images/test1.png"
-                alt="img13"
-              />
-            </div>
-            <div class="sample-sketch">
-              <img
-                class="sample-sketch-non-colored"
-                src="/images/test1-non-colored.png"
-                alt="img14"
-              />
-              <img
-                class="sample-sketch-colored"
-                src="/images/test1.png"
-                alt="img14"
-              />
-            </div>
-            <div class="sample-sketch">
-              <img
-                class="sample-sketch-non-colored"
-                src="/images/test1-non-colored.png"
-                alt="img15"
-              />
-              <img
-                class="sample-sketch-colored"
-                src="/images/test1.png"
-                alt="img15"
-              />
-            </div>
-            <div class="sample-sketch">
-              <img
-                class="sample-sketch-non-colored"
-                src="/images/test1-non-colored.png"
-                alt="img16"
-              />
-              <img
-                class="sample-sketch-colored"
-                src="/images/test1.png"
-                alt="img16"
-              />
-            </div>
-            <div class="sample-sketch">
-              <img
-                class="sample-sketch-non-colored"
-                src="/images/test1-non-colored.png"
-                alt="img17"
-              />
-              <img
-                class="sample-sketch-colored"
-                src="/images/test1.png"
-                alt="img17"
-              />
-            </div>
-            <div class="sample-sketch">
-              <img
-                class="sample-sketch-non-colored"
-                src="/images/test1-non-colored.png"
-                alt="img18"
-              />
-              <img
-                class="sample-sketch-colored"
-                src="/images/test1.png"
-                alt="img18"
-              />
-            </div>
+          <div class="wrap-sketch-bottom-menu">
+            <div>Zoom bar</div>
+            <input type="checkbox" />
+            <button>채색하기</button>
           </div>
+          <div>
+            <button>저장하기</button>
+          </div>
+          <aside class="sketch-aside">
+            <span>히스토리</span>
+            <img alt="history-sketch" src="" />
+          </aside>
         </div>
       </section>
     </div>
