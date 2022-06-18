@@ -1,1 +1,33 @@
 @import url("/css/reset.css");
+
+.wrap-paint-section {
+  display: flex;
+  .paint-section {
+    width: 100%;
+    .wrap-paint-menu {
+      display: flex;
+      .paint-menu-btn {
+        width: 92px;
+        height: 40px;
+        border: 0;
+        background-color: white;
+        > span {
+          padding: 1px 6px 1px 6px;
+          font-size: 14px;
+        }
+      }
+    }
+    .sketch-img {
+      width: 815px;
+      height: 815px;
+      background-color: white;
+    }
+  }
+  .paint-aside {
+    background-color: aqua;
+    width: 156px;
+    > img {
+      width: 100%;
+    }
+  }
+}
