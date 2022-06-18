@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/css/sketch.css" />
+    <link rel="stylesheet" href="/css/paint.css" />
   </head>
   <body>
     <div class="wrap-modal-side-menu hide-element">
@@ -26,7 +27,7 @@
         src="/images/times-icon.png"
       />
     </div>
-    <nav>
+    <nav class="nav-sketch">
       <ul>
         <img
           class="modal-handle-icon open-menu-icon"
@@ -140,27 +141,29 @@
         </div>
       </aside>
       <section class="sketch-section">
-        <div class="wrap-sketch">
-          <div class="wrap-sketch-menu">
-            <div>나가기</div>
-            <div>채색 모델</div>
-            <div>사용법 보기</div>
-            <div>의견 보내기</div>
-          </div>
-          <div id="clickedSketch">
-            <img src="" alt="sketch-img" />
-          </div>
-          <div class="wrap-sketch-bottom-menu">
-            <div>Zoom bar</div>
-            <input type="checkbox" />
-            <button>채색하기</button>
-          </div>
-          <div>
-            <button>저장하기</button>
-          </div>
-          <aside class="sketch-aside">
+        <div class="wrap-paint-section">
+          <section class="paint-section">
+            <div class="wrap-paint-menu">
+              <button class="paint-menu-btn"><span>나가기</span></button>
+              <button class="paint-menu-btn"><span>채색 모델</span></button>
+              <button class="paint-menu-btn"><span>사용법 보기</span></button>
+              <button class="paint-menu-btn"><span>의견 보내기</span></button>
+            </div>
+            <div class="sketch-img" id="clickedSketch">
+              <img src="/images/test1-non-colored.png" alt="sketch-img" />
+            </div>
+            <div class="wrap-paint-bottom-menu">
+              <div>Zoom bar</div>
+              <input type="checkbox" />
+              <button>채색하기</button>
+            </div>
+            <div>
+              <button>저장하기</button>
+            </div>
+          </section>
+          <aside class="paint-aside">
             <span>히스토리</span>
-            <img alt="history-sketch" src="" />
+            <img alt="history-sketch" src="/images/test1-non-colored.png" />
           </aside>
         </div>
       </section>
