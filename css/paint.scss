@@ -2,34 +2,50 @@
 
 .wrap-paint-section {
   display: flex;
-  .paint-section {
-    width: 100%;
-    padding: 92px 248px 183px 92px;
-    .wrap-paint-menu {
-      display: flex;
-      .paint-menu-btn {
-        width: 92px;
-        height: 40px;
-        border: 0;
-        background-color: white;
-        > span {
-          padding: 1px 6px 1px 6px;
-          font-size: 14px;
-        }
-      }
-    }
-    .sketch-img {
-      margin: 0 auto;
-      width: 815px;
-      height: 815px;
-      background-color: white;
+}
+
+.paint-section {
+  width: 100%;
+  // padding: 92px 248px 183px 92px;
+  .sketch-img {
+    margin: 0 auto;
+    width: 815px;
+    height: 815px;
+    background-color: white;
+  }
+}
+
+.wrap-paint-menu {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+  .paint-exit-btn {
+    width: 92px;
+    height: 40px;
+  }
+  .paint-other-btn {
+    width: 120px;
+    height: 40px;
+  }
+  .paint-menu-btn {
+    border: 0;
+    background-color: white;
+    > span {
+      padding: 1px 6px 1px 6px;
+      font-size: 14px;
     }
   }
-  .paint-aside {
-    background-color: aqua;
-    width: 156px;
-    > img {
-      width: 100%;
-    }
+}
+
+.zoom-controller {
+  display: flex;
+}
+
+.paint-aside {
+  background-color: aqua;
+  width: 156px;
+  padding: 28px 0px 0px 28px;
+  > img {
+    width: 100%;
   }
 }
