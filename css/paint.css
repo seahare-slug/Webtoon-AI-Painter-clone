@@ -4,17 +4,11 @@
 }
 
 .paint-section {
+  padding: 10px;
   width: 100%;
-}
-.paint-section .sketch-img {
-  margin: 0 auto;
-  width: 815px;
-  height: 815px;
-  background-color: white;
 }
 
 .wrap-paint-menu {
-  background-color: aquamarine;
   display: flex;
   justify-content: space-between;
 }
@@ -27,12 +21,24 @@
   height: 40px;
 }
 .wrap-paint-menu .paint-menu-btn {
+  margin: 5px 5px 40px 5px;
   border: 0;
   background-color: white;
 }
 .wrap-paint-menu .paint-menu-btn > span {
   padding: 1px 6px 1px 6px;
   font-size: 14px;
+  font-weight: bold;
+}
+
+.wrap-sketch-img {
+  margin: 0 auto;
+  width: 50%;
+}
+.wrap-sketch-img .sketch-img {
+  width: 815px;
+  height: 815px;
+  background-color: white;
 }
 
 .zoom-controller {
@@ -40,12 +46,12 @@
 }
 
 .paint-aside {
-  background-color: aqua;
   width: 156px;
   padding: 28px 0px 0px 28px;
+  background-color: white;
 }
 .paint-aside > img {
-  width: 100%;
+  width: 90%;
 }
 
 /*# sourceMappingURL=paint.css.map */

@@ -5,18 +5,11 @@
 }
 
 .paint-section {
+  padding: 10px;
   width: 100%;
-  // padding: 92px 248px 183px 92px;
-  .sketch-img {
-    margin: 0 auto;
-    width: 815px;
-    height: 815px;
-    background-color: white;
-  }
 }
 
 .wrap-paint-menu {
-  background-color: aquamarine;
   display: flex;
   justify-content: space-between;
   .paint-exit-btn {
@@ -28,12 +21,24 @@
     height: 40px;
   }
   .paint-menu-btn {
+    margin: 5px 5px 40px 5px;
     border: 0;
     background-color: white;
     > span {
       padding: 1px 6px 1px 6px;
       font-size: 14px;
+      font-weight: bold;
     }
+  }
+}
+
+.wrap-sketch-img {
+  margin: 0 auto;
+  width: 50%;
+  .sketch-img {
+    width: 815px;
+    height: 815px;
+    background-color: white;
   }
 }
 
@@ -42,10 +47,10 @@
 }
 
 .paint-aside {
-  background-color: aqua;
   width: 156px;
   padding: 28px 0px 0px 28px;
+  background-color: white;
   > img {
-    width: 100%;
+    width: 90%;
   }
 }
