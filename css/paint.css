@@ -32,8 +32,8 @@
 }
 
 .wrap-sketch-img {
-  margin: 0 auto;
-  width: 50%;
+  margin: 0 100px;
+  text-align: center;
 }
 .wrap-sketch-img .sketch-img {
   width: 815px;
@@ -41,8 +41,30 @@
   background-color: white;
 }
 
-.zoom-controller {
+.wrap-paint-bottom-menu {
   display: flex;
+  justify-content: space-between;
+  margin: 0 110px 130px 110px;
+}
+.wrap-paint-bottom-menu .zoom-controller {
+  display: flex;
+}
+.wrap-paint-bottom-menu .wrap-auto-and-paint-btn {
+  display: flex;
+}
+
+.wrap-paint-save-btn {
+  border-top: 1px rgba(0, 0, 0, 0.1) solid;
+  text-align: center;
+}
+.wrap-paint-save-btn .paint-save-btn {
+  width: 260px;
+  height: 62px;
+  margin: 26px 0px 28px;
+  background-color: white;
+  border: 0;
+  font-size: 100%;
+  font-weight: bold;
 }
 
 .paint-aside {
