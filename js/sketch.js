@@ -25,7 +25,16 @@ async function fetchHtmlAsText(url) {
   return await (await fetch(url)).text();
 }
 
-function conveyClickedSketchSrc(sample) {
-  const clickedSketch = document.querySelector("#clickedSketch img");
-  clickedSketch.src = sample.src;
+const toolDisabledArray = document.querySelectorAll(".tool-disabled");
+const disabledAttributeArray = document.querySelectorAll(
+  "button[disabled], input[disabled]"
+);
+
+function changeDisabledBtnToAbledBtn() {
+  toolDisabledArray.forEach((element) => {
+    element.classList.remove("tool-disabled");
+  });
+  disabledAttributeArray.forEach((element) => {
+    element.removeAttribute("disabled");
+  });
 }
