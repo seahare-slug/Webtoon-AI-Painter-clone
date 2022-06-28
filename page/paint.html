@@ -145,12 +145,15 @@
           <section class="paint-section">
             <div class="wrap-paint-menu">
               <div>
-                <button class="paint-exit-btn paint-menu-btn">
+                <button id="paintExitBtn" class="paint-exit-btn paint-menu-btn">
                   <span>나가기</span>
                 </button>
               </div>
               <div>
-                <button class="paint-other-btn paint-menu-btn">
+                <button
+                  id="paintColorModelBtn"
+                  class="paint-other-btn paint-menu-btn"
+                >
                   <span>채색 모델</span>
                 </button>
                 <button class="paint-other-btn paint-menu-btn">
@@ -161,6 +164,15 @@
                 </button>
               </div>
             </div>
+            <span id="paintExitHint" class="paint-menu-btn-hint hide-element"
+              >이전의 이미지 업로드 화면으로 돌아갑니다</span
+            >
+            <span
+              id="paintColorModelHint"
+              class="paint-menu-btn-hint hide-element"
+              >채색모델을 선택하여 한번에 채색을 완성하거나<br />전경 마스킹
+              기능을 사용할 수 있어요</span
+            >
             <div class="wrap-sketch-img">
               <img
                 class="sketch-img"
