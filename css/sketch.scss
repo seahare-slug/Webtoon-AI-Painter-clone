@@ -506,12 +506,12 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 15px;
   }
   .sample-sketch {
-    width: calc(45%);
+    width: 45%;
   }
 }
 
 @media screen and (min-width: 840px) and (max-width: 1279px) {
   .sample-sketch {
-    width: calc(30%);
+    width: 30%;
   }
 }
